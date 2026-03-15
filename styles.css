@@ -133,3 +133,7 @@ li {
         margin: 0.5in;
     }
 }
+
+.page-break {
+  page-break-before: always;
+}
