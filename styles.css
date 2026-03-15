@@ -137,3 +137,6 @@ li {
 .page-break {
   page-break-before: always;
 }
+
+.job-entry, li, section { break-inside: avoid; }
+h2 { break-after: avoid; }
