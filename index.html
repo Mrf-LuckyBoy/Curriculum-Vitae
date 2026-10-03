@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineer Resume</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/resume.css" />
+    <link rel="stylesheet" href="styles/print.css" media="print" />
   </head>
   <body>
     <header>
@@ -20,7 +22,7 @@
         <span class="separator">|</span>
         <span>066-154-6194</span>
         <span class="separator">|</span>
-        <a href="#">atsawa.c@gmail.com</a>
+        <a href="mailto:atsawa.c@gmail.com">atsawa.c@gmail.com</a>
         <span class="separator">|</span>
         LinkedIn:
         <a href="https://www.linkedin.com/in/atsawa">linkedin.com/in/atsawa</a>
@@ -32,24 +34,12 @@
 
     <section>
       <h2>Professional Summary</h2>
-      <!-- <p>
-        Highly adaptable and results-driven Software Engineer with 2+ years of
-        professional experience specializing in modern backend architecture and
-        high-performance system design using Go (Fiber) and TypeScript
-        (Bun/ElysiaJS). Proven ability to lead projects from requirement
-        analysis (SA/BA collaboration) through CI/CD setup and deployment.
-        Expert in diverse data solutions (MariaDB, MongoDB, Redis) and capable
-        of bridging backend expertise with mobile (Flutter) and full-stack
-        development (Vue.js, C# integration).
-      </p> -->
       <p>
-        Software Engineer with 2+ years of professional experience building
-        high-performance backend and full-stack systems using Go (Fiber),
-        TypeScript (Bun/ElysiaJS), and Node.js. Experienced in green-field
-        development, legacy system modernization, and CI/CD-driven deployments.
-        Strong background in database design, caching, and object storage, with
-        hands-on experience supporting web and mobile applications in production
-        environments.
+        Backend / Full-Stack Engineer with 3+ years of experience building
+        supply-chain and finance systems using Go, TypeScript, Node.js, and
+        SQL. Experienced with microservices, Kafka event processing, REST APIs,
+        feature-flagged releases, CI/CD, and legacy-system modernization in
+        production environments.
       </p>
     </section>
 
@@ -57,34 +47,95 @@
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">Languages:</div>
-        <div>Dart, Python, JavaScript (Node.js, Bun), Go, SQL, TypeScript</div>
+        <div>Go, TypeScript, JavaScript (Node.js, Bun), PHP, Python, SQL, Dart</div>
       </div>
       <div class="skills-grid">
         <div class="skill-category">Frameworks:</div>
-        <div>Flutter, Express, Fiber (Go), ElysiaJS, Fastify</div>
+        <div>Fiber (Go), ElysiaJS, Fastify, Express, Flutter</div>
       </div>
       <div class="skills-grid">
-        <div class="skill-category">Cloud / DevOps:</div>
-        <div>Docker, Linux, GitHub Actions</div>
+        <div class="skill-category">Architecture & Integration:</div>
+        <div>Microservices, Event-Driven Architecture, Kafka, REST APIs, Feature Flags</div>
       </div>
       <div class="skills-grid">
         <div class="skill-category">Databases:</div>
-        <div>MariaDB, MySQL, Redis, MongoDB, PostgreSQL</div>
+        <div>PostgreSQL, MySQL, MariaDB, SQL Server, MongoDB, Redis</div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">Cloud / DevOps:</div>
+        <div>Docker, Linux, GitHub Actions, CI/CD</div>
       </div>
     </section>
 
     <section>
       <h2>Professional Experience</h2>
 
+            <div class="job-entry">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Software Engineer</span> —
+            <span class="company-name"
+              >Freshket Co., Ltd. </span
+            >
+          </div>
+          <div class="job-date">May 2026 – Present</div>
+        </div>
+        <ul>
+          <li>
+            <strong>Regional Pricing & Warehouse Support</strong>: Developed
+            region-aware local-market pricing for multi-warehouse operations,
+            extending database queries and internal SCM UI, import, and export
+            workflows while preserving legacy defaults.
+          </li>
+          <li>
+            <strong>E-Tax Invoice Reliability</strong>: Built Kafka-based
+            invoice-processing consumers and a scheduled recovery workflow for
+            paid prepaid invoices that did not sync successfully.
+          </li>
+          <li>
+            <strong>Supplier Workflow Reliability</strong>: Enhanced
+            microservice-based supplier order-setting and notification flows
+            across backend services and the internal portal; added safeguards
+            against zero-quantity supplier-order updates and incorrect
+            comma-formatted price imports.
+          </li>
+          <!-- <li> -->
+          <!--   <strong>Backend Modernization & Green-Field Development</strong>: -->
+          <!--   Built green-field backend services using Go (Fiber) and Bun/ElysiaJS, reducing API response time by ~30–60% -->
+          <!-- </li> -->
+          <!-- <li> -->
+          <!--   <strong>Database and Storage Management</strong>: Managed diverse -->
+          <!--   data requirements by implementing solutions across -->
+          <!--   <strong>MongoDB</strong>, <strong>MariaDB</strong>, and leveraging -->
+          <!--   <strong>Redis</strong> for caching strategies, alongside -->
+          <!--   <strong>MinIO</strong> for scalable object storage. -->
+          <!-- </li> -->
+          <!-- <li> -->
+          <!--   <strong>Legacy System Optimization</strong>: Successfully maintained -->
+          <!--   and optimized critical performance issues within existing systems -->
+          <!--   using <strong>Node.js/Express</strong>, maintained 99.9% uptime for main services and reliability for legacy applications. -->
+          <!-- </li> -->
+          <!-- <li> -->
+          <!--   <strong>Mobile Versatility</strong>: Contributed to Flutter mobile codebase, gaining cross-platform mobile development experience alongside primary backend responsibilities. -->
+          <!-- </li> -->
+          <!-- <li> -->
+          <!--   <strong>Technical Standard Setting</strong>: Defined and implemented -->
+          <!--   core coding standards and project structures for new services in Go -->
+          <!--   and TypeScript/Bun, ensuring code quality and maintainability across -->
+          <!--   the team. -->
+          <!-- </li> -->
+        </ul>
+      </div>
+
       <div class="job-entry">
         <div class="job-header">
           <div>
             <span class="job-title">Software Engineer</span> —
             <span class="company-name"
-              >Internet Thailand Public Company Limited</span
+              >Internet Thailand Pub Co., Ltd.</span
             >
           </div>
-          <div class="job-date">Sep 2023 – Present</div>
+          <div class="job-date">Sep 2023 – Apr 2026</div>
         </div>
         <ul>
           <li>
@@ -118,16 +169,11 @@
           </li>
         </ul>
       </div>
-      <div class="page-break"></div>
-<div class="page2-header">
-  <span>Atsawa Chakhonmettakul</span>
-  <span>Page 2 of 2</span>
-</div>
       <div class="job-entry">
         <div class="job-header">
           <div>
             <span class="job-title">Cooperative Education Student</span> —
-            <span class="company-name">Western Digital</span>
+            <span class="company-name">Western Digital Storage Technologies (THAILAND) LTD.</span>
           </div>
           <div class="job-date">Nov 2022 – Feb 2023</div>
         </div>
