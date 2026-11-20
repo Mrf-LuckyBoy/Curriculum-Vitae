@@ -16,5 +16,10 @@ Open `index.html` directly in a browser, or serve the directory locally:
 python3 -m http.server 8000
 ```
 
-Visit `http://localhost:8000`, then use print preview to check the final
-résumé pagination.
+Visit `http://localhost:8000` in your browser.
+
+## Save as PDF
+
+Open the browser print dialog and choose **Save as PDF**. Select **A4** paper,
+keep the scale at **100%**, and turn off **Headers and footers** to omit the URL,
+print date, and page numbers. Confirm the preview shows one page before saving.

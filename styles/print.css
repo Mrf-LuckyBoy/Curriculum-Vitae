@@ -1,27 +1,70 @@
+@page {
+    size: A4;
+    margin: 10mm 12mm;
+}
+
 body {
+    max-width: none;
     padding: 0;
-    font-size: 11pt;
+    background: transparent;
+    color: #000;
+    font-size: 10.5pt;
+    line-height: 1.22;
+}
+
+h1,
+h2,
+.contact-info,
+.job-date,
+a {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
 }
 
 .no-print {
     display: none;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
+main > section {
+    margin-block-start: 0.65em;
 }
 
 h2 {
-    margin-top: 20px;
+    margin-block-end: 0.2em;
+}
+
+.skills-list > div {
+    margin-block-end: 0;
+}
+
+.job-entry + .job-entry {
+    margin-block-start: 0.5em;
+}
+
+.job-entry li + li {
+    margin-block-start: 0.1em;
+}
+
+h2,
+h3,
+.job-header {
     break-after: avoid;
 }
 
-@page {
-    margin: 0.5in;
-}
-
-.job-entry,
+.job-header,
+.skills-list > div,
 li {
     break-inside: avoid;
+}
+
+.job-entry ul {
+    break-before: avoid;
+}
+
+p {
+    orphans: 2;
+    widows: 2;
 }

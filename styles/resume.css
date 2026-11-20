@@ -1,88 +1,79 @@
-/* Header */
-header {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 h1 {
-    margin: 0;
     color: var(--accent-color);
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.15;
 }
 
-.contact-info {
-    margin-top: 10px;
-    font-size: 0.95rem;
+.headline {
+    margin-block: 0.3em;
+    font-weight: 600;
 }
 
-.contact-info a {
-    margin: 0 5px;
-    color: var(--primary-color);
-    text-decoration: none;
+.contact-info,
+.job-date {
+    color: var(--secondary-color);
+    font-size: 0.95em;
 }
 
-.separator {
-    color: #ccc;
+main > section {
+    margin-block-start: 1.1em;
 }
 
-/* Sections */
 h2 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--accent-color);
+    margin-block-end: 0.35em;
+    border-block-end: 1px solid var(--border-color);
     color: var(--accent-color);
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    font-size: 1.15em;
 }
 
-/* Experience */
-.job-entry {
-    margin-bottom: 20px;
+h3 {
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.skills-list > div {
+    margin-block-end: 0.1em;
+}
+
+.skills-list dt,
+.skills-list dd {
+    display: inline;
+}
+
+.skills-list dt {
+    margin-inline-end: 0.35em;
+    font-weight: 700;
+}
+
+.skills-list dt::after {
+    content: ":";
+}
+
+.job-entry + .job-entry {
+    margin-block-start: 0.75em;
 }
 
 .job-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 5px;
+    gap: 0 1em;
 }
 
 .job-title {
-    font-size: 1.05rem;
-    font-weight: bold;
+    grid-column: 1 / -1;
 }
 
-.company-name {
-    font-style: italic;
+.job-entry ul {
+    margin-block-start: 0.2em;
 }
 
-.job-date {
-    color: #666;
-    font-size: 0.9rem;
-    font-weight: bold;
+.job-entry li + li {
+    margin-block-start: 0.18em;
 }
 
-/* Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.skill-category {
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-/* Utilities */
-.no-print {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #f0f0f0;
-    text-align: center;
+@media screen and (max-width: 38rem) {
+    .job-header {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
