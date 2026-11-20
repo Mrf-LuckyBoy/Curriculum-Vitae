@@ -1,25 +1,35 @@
 :root {
-    --primary-color: #333;
-    --accent-color: #2c3e50;
-    --link-color: #0066cc;
-    --border-color: #e0e0e0;
+    --primary-color: #20252a;
+    --accent-color: #25364a;
+    --secondary-color: #46515d;
+    --link-color: #174d80;
+    --border-color: #c3cbd3;
 }
 
 body {
-    max-width: 850px;
+    max-width: 54rem;
     margin: 0 auto;
-    padding: 40px;
-    background-color: #fff;
+    padding: clamp(1rem, 5vw, 3rem);
     color: var(--primary-color);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    color: var(--link-color);
+    overflow-wrap: anywhere;
 }
 
 ul {
-    margin: 5px 0;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
+    margin: 0;
+    padding-inline-start: 1.2em;
 }
